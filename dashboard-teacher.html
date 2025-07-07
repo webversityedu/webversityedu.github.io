@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard - Webversity</title>
+    <!-- Link to Google's Material Icons stylesheet -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-layout-premium">
+        <!-- Sidebar - Using Material Icons -->
+        <aside class="dashboard-sidebar-premium">
+            <a href="index.html" class="sidebar-logo">
+                <span class="logo-icon">M</span>
+                <span class="logo-text">Webversity</span>
+            </a>
+
+            <ul class="sidebar-nav-premium">
+                <li class="active">
+                    <a href="#">
+                        <i class="material-icons">dashboard</i>
+                        <span class="nav-text">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons">school</i>
+                        <span class="nav-text">My Academy</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons">video_library</i>
+                        <span class="nav-text">My Courses</span>
+                    </a>
+                </li>
+                 <li>
+                    <a href="#">
+                        <i class="material-icons">groups</i>
+                        <span class="nav-text">My Cohorts</span>
+                    </a>
+                </li>
+                 <li>
+                    <a href="#">
+                        <i class="material-icons">payments</i>
+                        <span class="nav-text">Payments</span>
+                    </a>
+                </li>
+                 <li>
+                    <a href="#">
+                        <i class="material-icons">quiz</i>
+                        <span class="nav-text">Doubt Bank</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="sidebar-nav-premium" style="margin-top: auto;">
+                <li>
+                    <a href="#">
+                        <i class="material-icons">settings</i>
+                        <span class="nav-text">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="material-icons">logout</i>
+                        <span class="nav-text">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="dashboard-main-premium">
+            <!-- Professional Header (No changes here) -->
+            <div class="dashboard-header-pro">
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Welcome back, Prof. Anil! Here's your academy's performance overview.</p>
+                </div>
+                <div class="header-actions">
+                     <a href="#" class="btn btn-secondary">
+                        <i class="material-icons" style="font-size: 20px; margin-right: 8px;">add</i>New Cohort
+                    </a>
+                    <a href="#" class="btn btn-primary">
+                        <i class="material-icons" style="font-size: 20px; margin-right: 8px;">add</i>New Course
+                    </a>
+                </div>
+            </div>
+
+            <!-- Key Performance Indicators (No changes here) -->
+            <div class="kpi-grid">
+                <div class="stat-card-pro animate-on-scroll slide-up-on-scroll">
+                    <div class="kpi-icon"><i class="material-icons">trending_up</i></div>
+                    <span class="kpi-label">Total Revenue</span>
+                    <span class="kpi-value">₹4,82,900</span>
+                    <span class="kpi-trend positive">+8.2% vs last 30 days</span>
+                </div>
+                 <div class="stat-card-pro animate-on-scroll slide-up-on-scroll" style="transition-delay: 100ms;">
+                    <div class="kpi-icon"><i class="material-icons">person_outline</i></div>
+                    <span class="kpi-label">Active Students</span>
+                    <span class="kpi-value">2,458</span>
+                    <span class="kpi-trend positive">+124 this month</span>
+                </div>
+                 <div class="stat-card-pro animate-on-scroll slide-up-on-scroll" style="transition-delay: 200ms;">
+                    <div class="kpi-icon"><i class="material-icons">star_border</i></div>
+                    <span class="kpi-label">Average Rating</span>
+                    <span class="kpi-value">4.72</span>
+                    <span class="kpi-trend neutral">from 1,289 reviews</span>
+                </div>
+                 <div class="stat-card-pro animate-on-scroll slide-up-on-scroll" style="transition-delay: 300ms;">
+                    <div class="kpi-icon"><i class="material-icons">forum</i></div>
+                    <span class="kpi-label">Engagement Rate</span>
+                    <span class="kpi-value">73%</span>
+                    <span class="kpi-trend negative">-2.1% vs last 30 days</span>
+                </div>
+            </div>
+
+            <!-- Two-column Content Area (No changes here) -->
+            <div class="content-grid-teacher">
+                <!-- Main Column for Course List -->
+                <div class="main-column-teacher">
+                    <h2 class="section-title">Active Courses & Cohorts</h2>
+                    <ul class="course-list-pro">
+                        <li class="course-list-item animate-on-scroll slide-up-on-scroll">
+                            <div class="course-item-info">
+                                <h3>Data Science Fundamentals</h3>
+                                <span>Cohort • 567 Students</span>
+                            </div>
+                            <div class="course-item-stats">
+                                <span class="stat">₹1.58L</span>
+                                <span class="stat-label">Revenue</span>
+                            </div>
+                            <div class="course-item-stats">
+                                <span class="stat">4.6 ★</span>
+                                <span class="stat-label">Rating</span>
+                            </div>
+                            <a href="#" class="btn btn-secondary">Manage</a>
+                        </li>
+                        <li class="course-list-item animate-on-scroll slide-up-on-scroll">
+                            <div class="course-item-info">
+                                <h3>Advanced Calculus 301</h3>
+                                <span>Course • 842 Students</span>
+                            </div>
+                            <div class="course-item-stats">
+                                <span class="stat">₹2.15L</span>
+                                <span class="stat-label">Revenue</span>
+                            </div>
+                            <div class="course-item-stats">
+                                <span class="stat">4.8 ★</span>
+                                <span class="stat-label">Rating</span>
+                            </div>
+                            <a href="#" class="btn btn-secondary">Manage</a>
+                        </li>
+                        <li class="course-list-item animate-on-scroll slide-up-on-scroll">
+                            <div class="course-item-info">
+                                <h3>Machine Learning Basics</h3>
+                                <span>Course • 1,024 Students</span>
+                            </div>
+                             <div class="course-item-stats">
+                                <span class="stat">₹3.01L</span>
+                                <span class="stat-label">Revenue</span>
+                            </div>
+                            <div class="course-item-stats">
+                                <span class="stat">4.9 ★</span>
+                                <span class="stat-label">Rating</span>
+                            </div>
+                            <a href="#" class="btn btn-secondary">Manage</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Side Column for Schedule & Doubts -->
+                <div class="side-column-teacher">
+                    <div class="widget-card animate-on-scroll slide-up-on-scroll">
+                        <h2 class="section-title">Upcoming Schedule</h2>
+                        <ul class="schedule-list">
+                            <li><i class="material-icons live">fiber_manual_record</i><div><h3>Advanced Calculus</h3><span>Today, 3:00 PM</span></div></li>
+                            <li><i class="material-icons upcoming">schedule</i><div><h3>Data Science Intro</h3><span>Tomorrow, 10:00 AM</span></div></li>
+                            <li><i class="material-icons">event</i><div><h3>ML Cohort Q&A</h3><span>Oct 10, 5:00 PM</span></div></li>
+                        </ul>
+                    </div>
+                    <div class="widget-card animate-on-scroll slide-up-on-scroll">
+                        <h2 class="section-title">Pending Tasks</h2>
+                        <div class="doubt-summary">
+                            <i class="material-icons">quiz</i>
+                            <p>You have <strong>12 new questions</strong> in your Doubt Bank awaiting review.</p>
+                            <a href="#" class="btn btn-secondary" style="width: 100%; margin-top: 15px;">Review Doubts</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NEW SECTION: Charts Container -->
+            <div class="charts-container-pro animate-on-scroll slide-up-on-scroll">
+                <div class="chart-wrapper">
+                    <h3 class="section-title">Revenue vs. Student Growth</h3>
+                    <canvas id="revenueChartPro"></canvas>
+                </div>
+                <div class="chart-wrapper">
+                    <h3 class="section-title">Enrollment by Course Type</h3>
+                    <canvas id="engagementChartPro"></canvas>
+                </div>
+            </div>
+
+            <!-- NEW SECTION: Recent Activity Feed -->
+            <div class="activity-feed-container animate-on-scroll slide-up-on-scroll">
+                <h2 class="section-title">Recent Activity</h2>
+                <ul class="activity-list">
+                    <li>
+                        <i class="material-icons">person_add</i>
+                        <p><strong>Priya Sharma</strong> enrolled in <strong>Data Science Fundamentals</strong>.</p>
+                        <span class="timestamp">25 mins ago</span>
+                    </li>
+                    <li>
+                        <i class="material-icons">comment</i>
+                        <p><strong>Rohan Mehta</strong> left a new comment on <strong>Advanced Calculus - Lecture 5</strong>.</p>
+                        <span class="timestamp">1 hour ago</span>
+                    </li>
+                     <li>
+                        <i class="material-icons">star_rate</i>
+                        <p>You received a new 5-star review for <strong>Machine Learning Basics</strong>.</p>
+                        <span class="timestamp">3 hours ago</span>
+                    </li>
+                    <li>
+                        <i class="material-icons">payments</i>
+                        <p>A payout of <strong>₹88,400</strong> for August has been initiated.</p>
+                        <span class="timestamp">1 day ago</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- NEW SECTION: Professional Footer -->
+            <footer class="dashboard-footer-pro">
+                <p>© 2025 Webversity. All Rights Reserved.</p>
+                <nav>
+                    <a href="#">Support</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="terms.html#privacy">Privacy Policy</a>
+                </nav>
+            </footer>
+
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

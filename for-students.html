@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Students - Webversity</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* --- 14. For Students Page (Dynamic Redesign) --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .student-hero-v2 {
+            background-color: var(--primary-dark);
+            color: var(--text-light);
+            text-align: center;
+            padding: 120px 0;
+            position: relative;
+            overflow: hidden;
+            /* Important for the pseudo-element */
+        }
+
+        .hero-v2-background {
+            /* Animated gradient background */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, var(--accent-blue), var(--primary-dark), #4A5568);
+            background-size: 100% 100%;
+            opacity: 0.15;
+            z-index: 1;
+            animation: gradient-flow 15s ease infinite;
+        }
+
+        @keyframes gradient-flow {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            50% {
+                transform: translate(-25%, -25%) rotate(10deg);
+            }
+
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+        }
+
+        .student-hero-v2 .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .student-hero-v2 .tagline {
+            font-weight: 600;
+            color: var(--text-light);
+            opacity: 0.8;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .student-hero-v2 h1 {
+            color: var(--text-light);
+            font-size: 3.5rem;
+            font-weight: 800;
+        }
+
+        .student-hero-v2 p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 20px auto 30px auto;
+            color: var(--secondary-gray);
+        }
+
+        .feature-showcase-v2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card-student-v2 {
+            background-color: var(--text-light);
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card-student-v2:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
+            border-color: var(--accent-blue);
+        }
+
+        .feature-v2-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #E0E7FF, var(--accent-hover));
+            transition: all 0.3s ease;
+        }
+
+        .feature-card-student-v2:hover .feature-v2-icon {
+            transform: scale(1.1) rotate(15deg);
+            box-shadow: 0 8px 15px rgba(59, 130, 246, 0.3);
+        }
+
+        .feature-v2-icon .material-icons {
+            font-size: 32px;
+            color: var(--text-light);
+        }
+
+        .feature-card-student-v2 h3 {
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+        }
+
+        .how-it-works-section-v2 {
+            background-color: #F7F9FC;
+            /* Slightly different light bg */
+            background-image: radial-gradient(var(--secondary-gray) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+
+        /* Re-using how-it-works-item, hw-image, hw-content classes */
+
+        .testimonial-section-v2 {
+            background-color: #F0F5FF;
+            /* A light, welcoming blue */
+            padding: 100px 0;
+        }
+
+        .testimonial-card-v2 {
+            background-color: var(--text-light);
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 60px 50px 40px 50px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+            position: relative;
+        }
+
+        .testimonial-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 5px solid var(--text-light);
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: var(--shadow-md);
+        }
+
+        .testimonial-card-v2 p {
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.8;
+            color: var(--primary-dark);
+            margin-bottom: 30px;
+        }
+
+        .testimonial-card-v2 .testimonial-author h4 {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+        }
+
+        .testimonial-card-v2 .testimonial-author span {
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+
+        /* Responsive Overrides for Dynamic "For Students" Page */
+        @media (max-width: 767.98px) {
+            .student-hero-v2 h1 {
+                font-size: 2.5rem;
+            }
+
+            .how-it-works-item,
+            .how-it-works-item:nth-child(even) {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hw-image {
+                margin-bottom: 30px;
+            }
+
+            .testimonial-card-v2 {
+                padding: 60px 25px 30px 25px;
+            }
+
+            .testimonial-card-v2 p {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="index.html" class="logo">Multi<span>versity</span></a>
+            <ul class="nav-links">
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="for-students.html">For Students</a></li>
+                <li><a href="for-educators.html">For Educators</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="login.html" class="btn btn-secondary">Log In</a>
+                <a href="register.html" class="btn btn-primary">Get Started Free</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- REDESIGNED Student Hero Section -->
+        <section class="student-hero-v2">
+            <div class="hero-v2-background"></div>
+            <div class="container">
+                <span class="tagline animate-on-scroll">BUILT FOR THE MODERN LEARNER</span>
+                <h1 class="animate-on-scroll slide-up-on-scroll">Where Your Focus Finds Its Future.</h1>
+                <p class="animate-on-scroll slide-up-on-scroll" style="transition-delay: 150ms;">Webversity is more
+                    than a platform; it's an ecosystem engineered for deep learning. Leave the distractions behind and
+                    step into an environment built for your success.</p>
+                <div class="cta-buttons animate-on-scroll" style="transition-delay: 300ms;">
+                    <a href="courses.html" class="btn btn-primary btn-large">Explore Courses</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- REDESIGNED Feature Showcase Section -->
+        <section class="container feature-showcase-v2">
+            <div class="feature-card-student-v2 animate-on-scroll slide-up-on-scroll">
+                <div class="feature-v2-icon"><i class="material-icons">school</i></div>
+                <h3>Purpose-Built for Learning</h3>
+                <p>An environment free from clickbait and ads. Every tool, from note-taking to quizzes, is integrated to
+                    keep you in the flow.</p>
+            </div>
+            <div class="feature-card-student-v2 animate-on-scroll slide-up-on-scroll" style="transition-delay: 150ms;">
+                <div class="feature-v2-icon"><i class="material-icons">hub</i></div>
+                <h3>Learn Live or On-Demand</h3>
+                <p>Choose your path. Join interactive live cohorts to collaborate in real-time or master skills at your
+                    own pace with recorded courses.</p>
+            </div>
+            <div class="feature-card-student-v2 animate-on-scroll slide-up-on-scroll" style="transition-delay: 300ms;">
+                <div class="feature-v2-icon"><i class="material-icons">forum</i></div>
+                <h3>A Community That Cares</h3>
+                <p>You're not just a number. Connect with peers in dedicated forums, solve problems together, and grow
+                    with a community of motivated learners.</p>
+            </div>
+        </section>
+
+        <!-- How It Works Section (Now with background texture) -->
+        <section class="how-it-works-section-v2">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 60px;">A Clear Path to Mastery</h2>
+                <div class="how-it-works-item">
+                    <div class="hw-image animate-on-scroll slide-in-left">
+                        <img src="https://cdni.iconscout.com/illustration/premium/thumb/discover-new-idea-9457024-7676155.png"
+                            alt="Illustration of flexible learning options">
+                    </div>
+                    <div class="hw-content animate-on-scroll slide-in-right">
+                        <span class="tagline">1. DISCOVER</span>
+                        <h3>Find Your Perfect Course</h3>
+                        <p>Browse thousands of expert-led courses and cohorts. Filter by subject, language, or learning
+                            style to find the perfect fit for your goals.</p>
+                    </div>
+                </div>
+                <div class="how-it-works-item">
+                    <div class="hw-image animate-on-scroll slide-in-right">
+                        <img src="https://cdni.iconscout.com/illustration/premium/thumb/online-notes-4067869-3363914.png"
+                            alt="Illustration of integrated learning tools">
+                    </div>
+                    <div class="hw-content animate-on-scroll slide-in-left">
+                        <span class="tagline">2. ENGAGE</span>
+                        <h3>Immerse Yourself in Learning</h3>
+                        <p>Join live discussions, take notes alongside videos, and participate in community forums. Our
+                            integrated tools keep you focused and engaged.</p>
+                    </div>
+                </div>
+                <div class="how-it-works-item">
+                    <div class="hw-image animate-on-scroll slide-in-left">
+                        <img src="https://cdni.iconscout.com/illustration/premium/thumb/achieving-business-goal-5793229-4846684.png"
+                            alt="Illustration of achieving a goal">
+                    </div>
+                    <div class="hw-content animate-on-scroll slide-in-right">
+                        <span class="tagline">3. ACHIEVE</span>
+                        <h3>Master New Skills</h3>
+                        <p>Test your knowledge with quizzes and assignments, get personalized feedback, and build a
+                            portfolio of completed work to showcase your expertise.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section (Redesigned for more impact) -->
+        <!-- <section class="testimonial-section-v2">
+            <div class="container">
+                 <div class="testimonial-card-v2 animate-on-scroll">
+                    <img src="https://i.pravatar.cc/80?u=student1" alt="Priya Sharma" class="testimonial-avatar">
+                    <p>"I was so tired of trying to learn from chaotic platforms. Webversity's focused environment helped me finally concentrate and master web development. The community was a huge plus!"</p>
+                    <div class="testimonial-author">
+                        <h4>Priya Sharma</h4>
+                        <span>Web Development Student</span>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll slide-up-on-scroll" style="transition-delay: 150ms;">
+                        <i class="material-icons quote-icon">format_quote</i>
+                        <p>The live cohort for Data Science was a game-changer. Being able to ask questions in real-time and work on projects with classmates made all the difference. It felt like a real classroom.</p>
+                         <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/50?u=student2" alt="Rohan Mehta">
+                            <div>
+                                <h4>Rohan Mehta</h4>
+                                <span>Data Science Student</span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section> -->
+        <section class="testimonial-section">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 50px;">Join a Thriving Community of Learners</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card animate-on-scroll slide-up-on-scroll">
+                        <i class="material-icons quote-icon">format_quote</i>
+                        <p>I was so tired of trying to learn from chaotic platforms. Webversity's focused environment
+                            helped me finally concentrate and master web development. The community was a huge plus!</p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/50?u=student1" alt="Priya Sharma">
+                            <div>
+                                <h4>Priya Sharma</h4>
+                                <span>Web Development Student</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card animate-on-scroll slide-up-on-scroll" style="transition-delay: 150ms;">
+                        <i class="material-icons quote-icon">format_quote</i>
+                        <p>The live cohort for Data Science was a game-changer. Being able to ask questions in real-time
+                            and work on projects with classmates made all the difference. It felt like a real classroom.
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/50?u=student2" alt="Rohan Mehta">
+                            <div>
+                                <h4>Rohan Mehta</h4>
+                                <span>Data Science Student</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA (Same as About Us for consistency) -->
+        <section class="container final-cta-about">
+            <h2 class="animate-on-scroll">Ready to Start Your Learning Journey?</h2>
+            <p class="animate-on-scroll" style="transition-delay: 100ms;">Create your free account and discover a better
+                way to learn.</p>
+            <div class="cta-buttons animate-on-scroll" style="transition-delay: 200ms;">
+                <a href="register-student.html" class="btn btn-primary btn-large">Sign Up For Free</a>
+                <a href="courses.html" class="btn btn-secondary btn-large">See All Courses</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Consistent Footer -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h4>Platform</h4>
+                <ul>
+                    <li><a href="courses.html">Explore Courses</a></li>
+                    <li><a href="for-educators.html">For Educators</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="institutions.html">Institutions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="refund-policy.html">Refund Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 Webversity. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

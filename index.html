@@ -1,0 +1,281 @@
+<!-- FILENAME: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webversity - Your Universe of Teaching and Learning</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="index.html" class="logo">Web<span>versity</span></a>
+            <ul class="nav-links">
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="for-students.html">For Students</a></li>
+                <li><a href="for-educators.html">For Educators</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="login.html" class="btn btn-secondary">Log In</a>
+                <a href="register.html" class="btn btn-primary">Get Started Free</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Interactive Hero Section -->
+        <section class="hero-interactive">
+            <div class="hero-background"></div>
+            <div class="hero-toggle animate-on-scroll">
+                <button id="student-btn" class="toggle-btn active" data-persona="student">For Students</button>
+                <button id="educator-btn" class="toggle-btn" data-persona="educator">For Educators</button>
+                <div class="slider"></div>
+            </div>
+
+            <div class="hero-text-content">
+                <h1></h1>
+                <p></p>
+                <div class="hero-cta">
+                    <a href="#" id="hero-cta-1" class="btn btn-primary btn-large"></a>
+                    <a href="#" id="hero-cta-2" class="btn btn-secondary btn-large"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container stats-grid">
+                <div class="stat-item">
+                    <h2 class="stat-counter" data-target="10000">0+</h2>
+                    <p>Students Learning</p>
+                </div>
+                <div class="stat-item">
+                    <h2 class="stat-counter" data-target="500">0+</h2>
+                    <p>Expert Educators</p>
+                </div>
+                <div class="stat-item">
+                    <h2 class="stat-counter" data-target="1200">0+</h2>
+                    <p>Courses & Cohorts</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Webversity Section -->
+        <section class="container" style="text-align: center;">
+            <h2 class="animate-on-scroll">The Platform for Serious Learning</h2>
+            <div class="feature-grid" style="margin-top: 40px;">
+
+                <!-- Full Control -->
+                <div class="feature-card animate-on-scroll slide-up-on-scroll">
+                    <div class="feature-icon">
+                        <span class="material-icons">security</span>
+                    </div>
+                    <h3>Full Control</h3>
+                    <p>Educators own their content and pricing. Students get a direct, focused learning path.</p>
+                </div>
+
+                <!-- Structured Learning -->
+                <div class="feature-card animate-on-scroll slide-up-on-scroll" style="transition-delay: 200ms;">
+                    <div class="feature-icon">
+                        <span class="material-icons">view_agenda</span>
+                    </div>
+                    <h3>Structured Learning</h3>
+                    <p>Say goodbye to distractions. Our platform is built for deep learning with cohorts and
+                        communities.</p>
+                </div>
+
+                <!-- True Partnership -->
+                <div class="feature-card animate-on-scroll slide-up-on-scroll" style="transition-delay: 400ms;">
+                    <div class="feature-icon">
+                        <span class="material-icons">handshake</span>
+                    </div>
+                    <h3>True Partnership</h3>
+                    <p>Our commission-based model means we only succeed when our educators do. No monthly subscription
+                        fees.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Courses Section -->
+        <section class="course-section container">
+            <h2 class="animate-on-scroll" style="text-align: center;">Start Your Learning Journey Today</h2>
+            <p class="animate-on-scroll" style="text-align: center; max-width: 600px; margin: -20px auto 40px auto;">A
+                few of our most popular courses to get you started.</p>
+            <div class="course-grid">
+                <!-- Copy 3 of your best course cards from courses.html here -->
+                <a href="#" class="course-card animate-on-scroll slide-up-on-scroll">
+                    <div class="course-card-image">
+                        <img src="https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?q=80&w=1740&auto=format&fit=crop"
+                            alt="Web Development Course">
+                        <span class="course-card-type-tag live">LIVE COHORT</span>
+                    </div>
+                    <div class="course-card-content">
+                        <span class="course-card-tag">Development</span>
+                        <h3 class="course-card-title">The Complete 2025 Web Development Bootcamp</h3>
+                        <p class="course-card-description">Become a full-stack developer with just one course. HTML,
+                            CSS, Javascript, Node, React, and more!</p>
+                        <div class="course-card-details">
+                            <div class="detail-item">
+                                <span class="material-icons">schedule</span>
+                                <span>16 Weeks</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="material-icons">event</span>
+                                <span>Starts Aug 1st</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="material-icons">groups</span>
+                                <span>150+ Enrolled</span>
+                            </div>
+                        </div>
+                        <div class="course-card-footer">
+                            <div class="course-card-instructor">
+                                <img src="https://i.pravatar.cc/40?u=a" alt="">
+                                <span>Anil Chowdhury</span>
+                            </div>
+                            <div class="course-card-price">₹4,999<span>/mo</span></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="course-card animate-on-scroll slide-up-on-scroll">
+                    <div class="course-card-image">
+                        <img src="data-science-course.webp" alt="Data Science Course">
+                        <span class="course-card-type-tag recorded">SELF-PACED</span>
+                    </div>
+                    <div class="course-card-content">
+                        <span class="course-card-tag">Data Science</span>
+                        <h3 class="course-card-title">Data Science Mastery with Python</h3>
+                        <p class="course-card-description">Master NumPy, Pandas, Scikit-Learn, and real-world ML
+                            projects in one course.</p>
+                        <div class="course-card-details">
+                            <div class="detail-item"><span class="material-icons">schedule</span><span>30 Hours
+                                    Video</span></div>
+                            <div class="detail-item"><span class="material-icons">event_available</span><span>Available
+                                    Anytime</span>
+                            </div>
+                            <div class="detail-item"><span class="material-icons">groups</span><span>2,100+
+                                    Enrolled</span></div>
+                        </div>
+                        <div class="course-card-footer">
+                            <div class="course-card-instructor"><img src="https://i.pravatar.cc/40?u=ds"
+                                    alt=""><span>Sneha Ray</span></div>
+                            <div class="course-card-price">₹2,499</div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <!-- CARD EXAMPLE 2: Self-Paced Recorded Course -->
+                <a href="#" class="course-card animate-on-scroll slide-up-on-scroll" style="transition-delay: 200ms;">
+                    <div class="course-card-image">
+                        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1742&auto=format&fit=crop"
+                            alt="Design Course">
+                        <span class="course-card-type-tag recorded">SELF-PACED</span>
+                    </div>
+                    <div class="course-card-content">
+                        <span class="course-card-tag">Design</span>
+                        <h3 class="course-card-title">Figma UI/UX Design Essentials</h3>
+                        <p class="course-card-description">Go from beginner to pro in Figma. Learn all you need to
+                            design beautiful, modern interfaces.</p>
+                        <div class="course-card-details">
+                            <div class="detail-item">
+                                <span class="material-icons">schedule</span>
+                                <span>22 Hours Video</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="material-icons">event</span>
+                                <span>Available Now</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="material-icons">groups</span>
+                                <span>5,000+ Enrolled</span>
+                            </div>
+                        </div>
+                        <div class="course-card-footer">
+                            <div class="course-card-instructor"><img src="https://i.pravatar.cc/40?u=b"
+                                    alt=""><span>Shouvik Chowdhury</span></div>
+                            <div class="course-card-price">₹1,499</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta-section">
+            <div class="container final-cta-container">
+                <div class="cta-text-content">
+                    <h2 class="animate-on-scroll slide-in-left">Ready to Build Your Future?</h2>
+                    <p class="animate-on-scroll slide-in-left" style="transition-delay: 150ms;">
+                        Whether you're an educator ready to share your knowledge or a student eager to learn, your
+                        journey starts here. Create your free account in minutes.
+                    </p>
+                    <div class="animate-on-scroll slide-in-left" style="transition-delay: 300ms;">
+                        <a href="register.html" class="btn btn-primary btn-large">Get Started For Free</a>
+                    </div>
+                </div>
+                <div class="cta-svg-content animate-on-scroll slide-in-right" style="transition-delay: 450ms;">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/009/571/211/small_2x/teacher-and-student-in-class-room-free-vector.jpg"
+                        alt="Illustration of a person building with blocks, representing growth and creation">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer (Copy from previous version) -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h4>Platform</h4>
+                <ul>
+                    <li><a href="courses.html">Explore Courses</a></li>
+                    <li><a href="for-educators.html">For Educators</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="institutions.html">Institutions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="refund-policy.html">Refund Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 Webversity. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

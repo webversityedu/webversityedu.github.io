@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webversity - The All-In-One Platform for Education</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <!-- THE CORRECT STRUCTURE -->
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="index.html" class="logo">Web<span>versity</span></a>
+            <ul class="nav-links">
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="for-students.html">For Students</a></li>
+                <li><a href="for-educators.html">For Educators</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="login.html" class="btn btn-secondary">Log In</a>
+                <a href="register.html" class="btn btn-primary">Get Started Free</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Page Header & Search (Unchanged) -->
+            <div class="page-header animate-on-scroll">
+                <h1>Explore Courses</h1>
+                <p style="font-size: 1.25rem; max-width: 600px; margin: 15px auto 0 auto;">Find your next learning
+                    adventure from thousands of courses taught by industry experts.</p>
+                <div class="search-container">
+                    <input type="text" placeholder="Search for anything... (e.g., 'React Native')">
+                    <button aria-label="Search"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                                clip-rule="evenodd" />
+                        </svg></button>
+                </div>
+            </div>
+
+            <!-- Category Filters (Unchanged) -->
+            <div class="category-filters animate-on-scroll" style="transition-delay: 200ms;">
+                <button class="btn btn-secondary active">All</button>
+                <button class="btn btn-secondary">Development</button>
+                <button class="btn btn-secondary">Design</button>
+                <button class="btn btn-secondary">Business</button>
+                <button class="btn btn-secondary">Marketing</button>
+                <button class="btn btn-secondary">Academics</button>
+            </div>
+
+            <!-- Course Section: Popular Courses -->
+            <section class="course-section">
+                <h2 class="animate-on-scroll">Popular Live Cohorts</h2>
+                <div class="course-grid">
+
+                    <!-- CARD EXAMPLE 1: Live Cohort (Starting Soon) -->
+                    <a href="#" class="course-card animate-on-scroll slide-up-on-scroll">
+                        <div class="course-card-image">
+                            <img src="https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?q=80&w=1740&auto=format&fit=crop"
+                                alt="Web Development Course">
+                            <span class="course-card-type-tag live">LIVE COHORT</span>
+                        </div>
+                        <div class="course-card-content">
+                            <span class="course-card-tag">Development</span>
+                            <h3 class="course-card-title">The Complete 2025 Web Development Bootcamp</h3>
+                            <p class="course-card-description">Become a full-stack developer with just one course. HTML,
+                                CSS, Javascript, Node, React, and more!</p>
+                            <div class="course-card-details">
+                                <div class="detail-item">
+                                    <span class="material-icons">schedule</span>
+                                    <span>16 Weeks</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="material-icons">event</span>
+                                    <span>Starts Aug 1st</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="material-icons">groups</span>
+                                    <span>150+ Enrolled</span>
+                                </div>
+                            </div>
+                            <div class="course-card-footer">
+                                <div class="course-card-instructor">
+                                    <img src="https://i.pravatar.cc/40?u=a" alt="">
+                                    <span>Anil Chowdhury</span>
+                                </div>
+                                <div class="course-card-price">₹4,999<span>/mo</span></div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="course-card animate-on-scroll slide-up-on-scroll">
+                        <div class="course-card-image">
+                            <img src="data-science-course.webp" alt="Data Science Course">
+                            <span class="course-card-type-tag recorded">SELF-PACED</span>
+                        </div>
+                        <div class="course-card-content">
+                            <span class="course-card-tag">Data Science</span>
+                            <h3 class="course-card-title">Data Science Mastery with Python</h3>
+                            <p class="course-card-description">Master NumPy, Pandas, Scikit-Learn, and real-world ML
+                                projects in one course.</p>
+                            <div class="course-card-details">
+                                <div class="detail-item"><span class="material-icons">schedule</span><span>30 Hours
+                                        Video</span></div>
+                                <div class="detail-item"><span
+                                        class="material-icons">event_available</span><span>Available Anytime</span>
+                                </div>
+                                <div class="detail-item"><span class="material-icons">groups</span><span>2,100+
+                                        Enrolled</span></div>
+                            </div>
+                            <div class="course-card-footer">
+                                <div class="course-card-instructor"><img src="https://i.pravatar.cc/40?u=ds"
+                                        alt=""><span>Sneha Ray</span></div>
+                                <div class="course-card-price">₹2,499</div>
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <!-- CARD EXAMPLE 2: Self-Paced Recorded Course -->
+                    <a href="#" class="course-card animate-on-scroll slide-up-on-scroll"
+                        style="transition-delay: 200ms;">
+                        <div class="course-card-image">
+                            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1742&auto=format&fit=crop"
+                                alt="Design Course">
+                            <span class="course-card-type-tag recorded">SELF-PACED</span>
+                        </div>
+                        <div class="course-card-content">
+                            <span class="course-card-tag">Design</span>
+                            <h3 class="course-card-title">Figma UI/UX Design Essentials</h3>
+                            <p class="course-card-description">Go from beginner to pro in Figma. Learn all you need to
+                                design beautiful, modern interfaces.</p>
+                            <div class="course-card-details">
+                                <div class="detail-item">
+                                    <span class="material-icons">schedule</span>
+                                    <span>22 Hours Video</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="material-icons">event</span>
+                                    <span>Available Now</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="material-icons">groups</span>
+                                    <span>5,000+ Enrolled</span>
+                                </div>
+                            </div>
+                            <div class="course-card-footer">
+                                <div class="course-card-instructor"><img src="https://i.pravatar.cc/40?u=b"
+                                        alt=""><span>Shouvik Chowdhury</span></div>
+                                <div class="course-card-price">₹1,499</div>
+                            </div>
+                        </div>
+                    </a>
+
+
+
+                    <!-- CARD EXAMPLE 3: Live Cohort (In Progress) -->
+                    <a href="#" class="course-card animate-on-scroll slide-up-on-scroll"
+                        style="transition-delay: 400ms;">
+                        <div class="course-card-image">
+                            <img src="https://images.unsplash.com/photo-1599658880436-c61792e70672?q=80&w=1740&auto=format&fit=crop"
+                                alt="Marketing Course">
+                            <span class="course-card-type-tag live">LIVE COHORT</span>
+                        </div>
+                        <div class="course-card-content">
+                            <span class="course-card-tag">Marketing</span>
+                            <h3 class="course-card-title">The Complete Digital Marketing Guide 2025</h3>
+                            <p class="course-card-description">Master Google Ads, SEO, Social Media Marketing, and more
+                                to grow any business online.</p>
+                            <div class="course-card-details">
+                                <div class="detail-item"><span class="material-icons">schedule</span> <span>10
+                                        Weeks</span></div>
+                                <div class="detail-item"><span class="material-icons">event</span><span>In
+                                        Progress</span></div>
+                                <div class="detail-item"><span class="material-icons">groups</span><span>450+
+                                        Enrolled</span></div>
+                            </div>
+                            <div class="course-card-footer">
+                                <div class="course-card-instructor"><img src="https://i.pravatar.cc/40?u=c"
+                                        alt=""><span>Mampi Sengupta</span></div>
+                                <div class="course-card-price">₹3,499<span>/mo</span></div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer (Shared across pages) -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h4>Platform</h4>
+                <ul>
+                    <li><a href="courses.html">Explore Courses</a></li>
+                    <li><a href="for-educators.html">For Educators</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="institutions.html">Institutions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="refund-policy.html">Refund Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 Webversity. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

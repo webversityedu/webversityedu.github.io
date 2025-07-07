@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Webversity</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Consistent Header -->
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="index.html" class="logo">Web<span>versity</span></a>
+            <ul class="nav-links">
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="for-students.html">For Students</a></li>
+                <li><a href="for-educators.html">For Educators</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="login.html" class="btn btn-secondary">Log In</a>
+                <a href="register.html" class="btn btn-primary">Get Started Free</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contact Hero Section -->
+        <section class="contact-hero">
+            <div class="container">
+                <h1 class="animate-on-scroll slide-up-on-scroll">Let's Talk</h1>
+                <p class="animate-on-scroll slide-up-on-scroll" style="transition-delay: 150ms;">Whether you have a question, feedback, or a partnership idea—we're here to help.</p>
+            </div>
+        </section>
+
+        <!-- Main Layout for Contact Page -->
+        <div class="container contact-layout">
+            <!-- Left Column: The Form -->
+            <div class="contact-form-container animate-on-scroll slide-in-left">
+                <h2>Send Us a Message</h2>
+                <form class="auth-form" style="padding:0; box-shadow:none; max-width: none;">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inquiry-type">Topic of Inquiry</label>
+                        <select id="inquiry-type" class="form-control" required>
+                            <option value="" disabled selected>Please select a topic...</option>
+                            <option value="student-support">Student Support</option>
+                            <option value="educator-support">Educator Support</option>
+                            <option value="partnerships">Partnerships & Press</option>
+                            <option value="general">General Feedback</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" class="form-control" rows="6" placeholder="Tell us how we can help..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Right Column: Info & Alternatives -->
+            <div class="contact-info-container animate-on-scroll slide-in-right">
+                <h2>Other Ways to Reach Us</h2>
+                <p>For immediate answers, or if you prefer other channels, here are some great options.</p>
+                <ul class="info-card-list">
+                    <a href="faq.html" class="info-card">
+                        <i class="material-icons">quiz</i>
+                        <div class="info-card-content">
+                            <h3>Check our FAQ</h3>
+                            <p>Find quick answers to our most common questions.</p>
+                        </div>
+                    </a>
+                     <a href="mailto:support@Webversity.com" class="info-card">
+                        <i class="material-icons">email</i>
+                        <div class="info-card-content">
+                            <h3>Email Us Directly</h3>
+                            <p>Send your questions to support@Webversity.com</p>
+                        </div>
+                    </a>
+                     <a href="#" class="info-card">
+                        <i class="material-icons">public</i>
+                        <div class="info-card-content">
+                            <h3>Connect on Social</h3>
+                            <p>Follow us on Twitter, LinkedIn, and Instagram.</p>
+                        </div>
+                    </a>
+                </ul>
+                <div class="contact-illustration">
+                    <img src="customer-support.png" alt="Illustration of customer support">
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Consistent Footer -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h4>Platform</h4>
+                <ul>
+                    <li><a href="courses.html">Explore Courses</a></li>
+                    <li><a href="for-educators.html">For Educators</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="institutions.html">Institutions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="refund-policy.html">Refund Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 Webversity. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
