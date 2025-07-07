@@ -12,16 +12,37 @@
     <style>
         /* --- 24. Professional Student Dashboard --- */
         :root {
-            --bg-dashboard: #F7F9FC;
-            --bg-widget: #FFFFFF;
-            --border-color-light: #E9EDF2;
-            --text-primary-dark: #1A202C;
-            --text-secondary-dark: #64748B;
-            --text-tertiary-dark: #94A3B8;
-            --accent-blue-pro: #4338CA;
-            --accent-blue-pro-light: #EEF2FF;
-            --accent-blue-rgb: 67, 56, 202;
-            --shadow-pro: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            /* --- Primary & Text Colors (Swapped with Warm Neutrals) --- */
+
+            /* A very dark, slightly warm gray for headings. Softer than pure black. */
+            --primary-dark: #a82929;
+            /* A softer, warm gray for paragraphs and secondary text. */
+            --primary-text: #4B5563;
+            /* A very light warm gray for subtle backgrounds, like highlighted nav links. */
+            --secondary-gray: #E5E7EB;
+            /* A very light, warm off-white for the main page background. */
+            --bg-light: #F9FAFB;
+            /* Pure white for text on dark/colored backgrounds (No change). */
+            --text-light: #ffffff;
+            /* Standard border color, now a warm gray. */
+            --border-color: #D1D5DB;
+            /* --- Accent Colors (Swapped from Blue to Crimson) --- */
+            /* THE KEY CHANGE: Main accent is now a deep, commanding crimson. */
+            --accent-blue: #DC2626;
+            /* Hover state for the crimson accent. */
+            --accent-hover: #B91C1C;
+
+            /* --- System & Status Colors --- */
+
+            /* A vibrant green that pairs well with the warm theme. */
+            --success-green: #10B981;
+            /* A standard, unambiguous red for error messages. */
+            --error-red: #EF4444;
+
+
+            /* --- Shadows (No change needed) --- */
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
 
         .material-symbols-outlined {
@@ -522,10 +543,8 @@
         <aside class="sidebar-pro">
             <div class="sidebar-header">
                 <a href="index.html" class="sidebar-logo-pro">
-                    <img src="" alt="Webversity Logo"
-                        class="logo-full">
-                    <img src="" alt="Webversity Icon"
-                        class="logo-icon">
+                    <img src="webversity-logo.jpg" alt="Webversity Logo" class="logo-full">
+                    <img src="webversity-logo.jpg" alt="Webversity Icon" class="logo-icon">
                 </a>
                 <button class="sidebar-toggle-btn" title="Toggle Sidebar">
                     <span class="material-symbols-outlined">menu_open</span>
@@ -584,7 +603,7 @@
                     <div class="user-profile-pro">
                         <img src="https://i.pravatar.cc/40?u=chandra" alt="User Avatar">
                         <div class="user-info">
-                            <span>Chandra S. Gop</span>
+                            <span>Soutrika Das</span>
                             <span class="material-symbols-outlined">expand_more</span>
                         </div>
                     </div>
